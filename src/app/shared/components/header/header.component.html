@@ -1,0 +1,16 @@
+<nav class="header-nav">
+  <div class="header-container">
+    <a routerLink="/home" class="app-title">
+      My App
+    </a>
+    <div class="nav-links">
+      <a routerLink="/home" class="nav-link">Home</a>
+      <a *ngIf="!(isAuthenticated$ | async)" routerLink="/login" class="nav-link">Login</a>
+      <a *ngIf="isAuthenticated$ | async" routerLink="/dashboard" class="nav-link">Dashboard</a>
+      <button *ngIf="isAuthenticated$ | async" (click)="onLogout()"
+              class="logout-button">
+        Logout
+      </button>
+    </div>
+  </div>
+</nav>

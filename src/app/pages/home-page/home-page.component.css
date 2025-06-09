@@ -1,0 +1,62 @@
+.home-page-container {
+  min-height: calc(100vh - 64px); /* Adjust for header height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #3b82f6, #4f46e5); /* bg-gradient-to-br from-blue-500 to-indigo-600 */
+  color: #fff;
+  padding: 1rem;
+}
+
+.home-content-box {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); /* bg-white bg-opacity-10 */
+  padding: 2.5rem; /* p-10 */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-2xl */
+  backdrop-filter: blur(8px); /* backdrop-filter backdrop-blur-sm */
+  max-width: 90%; /* For responsiveness */
+}
+
+.main-title {
+  font-size: 3rem; /* text-5xl */
+  font-weight: 800; /* font-extrabold */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.subtitle {
+  font-size: 1.25rem; /* text-xl */
+  margin-bottom: 2rem; /* mb-8 */
+  opacity: 0.9; /* opacity-90 */
+}
+
+.login-button {
+  background-color: #fff;
+  color: #4338ca; /* text-indigo-700 */
+  padding: 0.75rem 2rem; /* px-8 py-3 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition-property: background-color, transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  display: inline-block;
+}
+.login-button:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-down { animation: fadeInDown 0.8s ease-out forwards; }
+.animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards 0.2s; } /* Slight delay for second animation */
