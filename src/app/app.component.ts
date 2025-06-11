@@ -6,12 +6,9 @@ import { HeaderComponent } from './shared/components/header/header.component';
   selector: 'app-root',
   standalone: true, // Mark as standalone
   imports: [RouterOutlet, HeaderComponent], // Import other standalone components/modules it uses
-  template: `
-    <app-header></app-header>
-    <router-outlet></router-outlet>
-  `,
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'] // Link to global styles if needed
 })
 export class AppComponent {
-  title = 'frontend-app';
+  title = 'learning-app';
 }
