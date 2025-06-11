@@ -3,11 +3,13 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AuthGuard } from './core/guards/auth.guard';
+import { SignupComponent } from './auth/signup/signup.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect empty path to home
     { path: 'home', component: HomePageComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'signup', component: SignupComponent },
     {
         path: 'dashboard',
         component: DashboardComponent,

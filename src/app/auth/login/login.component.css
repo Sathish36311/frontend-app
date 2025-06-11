@@ -96,3 +96,19 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.signup-link-text {
+  margin-top: 1.5rem; /* mt-6 */
+  text-align: center;
+  font-size: 0.875rem; /* text-sm */
+  color: #4a5568; /* text-gray-600 */
+}
+
+.signup-link {
+  color: #4f46e5; /* text-indigo-600 */
+  font-weight: 500;
+  text-decoration: underline;
+}
+.signup-link:hover {
+  color: #4338ca; /* hover:text-indigo-700 */
+}
